@@ -1,0 +1,57 @@
+- Module thuc hien cac chuc nang yeu cau thu App box.
+- Module ket noi voi Database va tra ve cac xml tuong ung yeu cau
+
+
+http://172.16.9.188:8384/WAI/CoreMedia?command=102&keystb=2001&typetvbox=TV  =>lenh lay thong tin chao khach hang
+http://172.16.9.188:8384/WAI/CoreMedia?command=103&keystb=2001&types=WELCOME  =>lenh lay hinh anh quang cao (types = {WELCOME,MUSIC})
+http://172.16.9.188:8384/WAI/CoreMedia?command=104&keystb=2001@-1  =>lenh lay danh sach cac dich vu man hinh chinh
+http://172.16.9.188:8384/WAI/CoreMedia?command=46&keystb=2001 => lay thong tin ve hien thi cac ngon ngu, ve hinh anh logo
+http://115.78.128.18:28384/WAI_01/CoreMedia?command=105&keystb=2001&serviceid=1 => lay thong tin chu de cua mot service nao do
+http://172.16.9.188:8384/WAI/CoreMedia?command=106&keystb=2001&outletType=M&outletid=22 => lay thong tin chi teit cua chu de Info 
+
+http://172.16.9.188:8384/WAI/CoreMedia?command=1&keystb=2001&type=VOD => Danh sach chu de cua phim.
+http://172.16.9.188:8384/WAI/CoreMedia?command=2&keystb=2001&subjectid=31&fromRow=-1&noRows=-1 => danh sach phim thuoc chu de 31 (fromRow=-1&noRows=-1 => fix cung )
+http://172.16.9.188:8384/WAI/CoreMedia?command=11&keystb=2001 => danh sach chu de nhac.
+http://172.16.9.188:8384/WAI/CoreMedia?command=12&subjectid=412&keystb=2001&fromRow=-1&noRows=-1 => danh sach cac bai hat thuoc de de 
+http://172.16.9.188:8384/WAI/CoreMedia?command=21&keystb=2001&subjectid=31&fromRow=-1&noRows=-1 => Danh sach chu de cua ekenh Tivi
+http://172.16.9.188:8384/WAI/CoreMedia?command=22&keystb=2001&channelid=22&fromRow=-1&noRows=-1 => Danh sach cac kenh thuoc chu de Tivi
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=5&keystb=2001&contentid=1370 => lay danh sach các sub
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=3&keystb=2001&contentid=1011 => lay chi tiet cua 1 phim
+--Ham tra ve thuoc tinh nogn ngu hinh anh, icon coa trang welcom
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=46&keystb=2001
+--Ham set ngon ngu khi gnuoi duing con ngon ngu
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=31&keystb=2001&langid=1
+--Lay danh sach cac chu de mon an cua dining
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=107&keystb=2001&mainnenuid=-9012 ---> cap thu 1
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=107&keystb=2001&mainnenuid=2 ---> cap thu 2
+--Lay danh cach cac mon an thuocn chu de
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=108&keystb=2001&submenuid=5&fromRow=-1&noRows=-1
+--Lay bill cua phong
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=109&keystb=2001
+--Lay item cua Activite
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=110&keystb=2001&mainnenuid=162
+--Post order
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=114&keystb=2001&items=xxx
+vơi xxx =  Itemcode-IQty-orderTime-orderDate va moi xxx phan biet nhau bang dau @
+--get mess all item
+http://localhost:8386/WAI_01/CoreMedia?command=115&keystb=2001
+--get one messge info
+http://localhost:8386/WAI_01/CoreMedia?command=100&keystb=2001&messId=2138
+--get promotion 
+http://localhost:8386/WAI_01/CoreMedia?command=116&keystb=2001
+--get Exchange Rate
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=117&keystb=2001
+--Thoi tiet 
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=118&keystb=2001 => danh sach cac tinh thanh
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=119&day=4&keystb=2001 => Thoi tiet trong 1 ngay nao do
+http://172.16.9.188:8384/WAI_01/CoreMedia?command=120&coutrid=4&keystb=2001 => thoi tiet trong tuan cua 1 tinh nao do
+
+
+
+
+
+
+
+
+
+
